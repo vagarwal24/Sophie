@@ -1,0 +1,307 @@
+<html>
+<head> <title> sophie </title>
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+  <style>
+    .purp{
+      background-color: #8F95CA;
+    }
+    .wh{
+      background-color: #ffffff;
+    }
+
+
+  </style>
+
+</head>
+<body style="background-color: #D1F5F2">
+<div class="container">
+
+<div class="row">
+<div class="col-xs-8">
+<h3 style="font-weight: bold;color:#AAAEAE">Welcome Home Sophie</h3>
+<p>Which room woulkd you like me to turn it on for you?</p>
+</div>
+<div class="col-xs-4" style="padding-top:8%;text-align: right">
+<img src="cloud.png" style="width:100%;" />
+</div>
+</div>
+<div class="row">
+<div class="col-xs-6" onclick="myFunction()">
+
+<div class="card" id="myDIV" style="background-color: #ffffff; border-radius: 10%">
+	<div class="card-body" style="text-align: center;padding:10% 10% 10% 10%">
+<img src="livingroom.jpg" style="width: 100px; color: #8F95CA"/>
+<br/>
+<b>Living Room</b>
+<br/>
+<span>4 Devices</span>
+</div>
+
+</div>
+
+</div>
+<script>
+function myFunction() { 
+  //body....
+ var t=document.getElementById("myDIV");
+
+console.log(t.style.backgroundColor);
+
+if(t.style.backgroundColor == "rgb(143, 149, 202)")
+{
+  document.getElementById("myDIV").style.backgroundColor="#ffffff";
+}
+else
+{
+document.getElementById("myDIV").style.backgroundColor="#8F95CA"; 
+}
+
+
+}
+</script>
+<!--device switch collumn -->
+<div class="col-xs-6" >
+
+<div class="card wh" id="myIOD" onclick="myIODfunction()" style="border-radius: 10%">
+	<div class="card-body" style="text-align: center;padding:10% 10% 10% 10%">
+<img src="kitchen.jpg" style="width: 100px;height: 50px;color: #8F95CA"/>
+<br/>
+<b>Kitchen</b>
+<br/>
+<span>3 Devices</span>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function myIODfunction() { 
+  //body....
+ var t=document.getElementById("myIOD").classList;
+if(t.contains('wh'))
+{
+document.getElementById("myIOD").classList.remove('wh');
+document.getElementById("myIOD").classList.add('purp');
+
+}
+else
+{
+  document.getElementById("myIOD").classList.remove('purp');
+document.getElementById("myIOD").classList.add('wh');
+}
+
+
+
+
+
+
+
+}
+</script>
+
+
+
+</div>
+<br/>
+
+
+<div class="row">
+<div class="col-xs-6">
+
+<div class="card purp" id="myfile" onclick="myfilefunction()" style="border-radius: 10%">
+	<div class="card-body" style="text-align: center;padding:10% 10% 10% 10%">
+<img src="bed room.png" style="width: 100px"/>
+<br/>
+<b>Bed room</b>
+<br/>
+<span>3 Devices</span>
+</div>
+
+</div>
+
+
+</div>
+
+<script>
+function myfilefunction() { 
+  //body....
+ var t=document.getElementById("myfile").classList;
+if(t.contains('wh'))
+{
+document.getElementById("myfile").classList.remove('wh');
+document.getElementById("myfile").classList.add('purp');
+
+}
+else
+{
+  document.getElementById("myfile").classList.remove('purp');
+document.getElementById("myfile").classList.add('wh');
+}
+
+
+
+
+
+
+
+}
+</script>
+
+
+
+
+<div class="col-xs-6">
+
+<div class="card wh" id="myroom" onclick="myroomfunction()" style="border-radius: 10%">
+	<div class="card-body" style="text-align: center;padding:10% 10% 10% 10%">
+<img src="read.png" style="width: 100px; height: 70px"/>
+<br/>
+<b>Reading Room</b>
+<br/>
+<span>3 Devices</span>
+</div>
+
+
+</div>
+</div>
+</div>
+<script>
+function myroomfunction() { 
+  //body....
+ var t=document.getElementById("myroom").classList;
+if(t.contains('wh'))
+{
+document.getElementById("myroom").classList.remove('wh');
+document.getElementById("myroom").classList.add('purp');
+
+}
+else
+{
+  document.getElementById("myroom").classList.remove('purp');
+document.getElementById("myroom").classList.add('wh');
+}
+
+
+
+
+
+
+
+}
+</script>
+<br/>
+
+
+
+<div class="row">
+	<div class="col-xs-6">
+<div class="card wh" id="myfirst" onclick="myfirstfunction()" style="border-radius: 10%">
+<div class="card-body" style="text-align: center;padding:10% 10% 10% 10%">
+<img src="bathroom.png" style="width: 100px"/>
+<br/>
+<b> BathRoom	</b>
+<br/>
+<span> 2 Device</span>
+</div>
+</div>
+</div>
+<script>
+function myfirstfunction() { 
+  //body....
+ var t=document.getElementById("myfirst").classList;
+if(t.contains('wh'))
+{
+document.getElementById("myfirst").classList.remove('wh');
+document.getElementById("myfirst").classList.add('purp');
+
+}
+else
+{
+  document.getElementById("myfirst").classList.remove('purp');
+document.getElementById("myfirst").classList.add('wh');
+}
+
+
+
+
+
+
+
+}
+</script>
+
+<div class="col-xs-6">
+<div class="card wh" id="mysecond" onclick="mysecondfunction()" style="border-radius: 10%">
+<div class="card-body" style="text-align: center;padding:10% 10% 10% 10%">
+<img src="baby.jpg" style="width: 100px; height: 50px"/>
+<br/>
+<b> Baby Room	</b>
+<br/>
+<span> 2 Device</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+function mysecondfunction() { 
+  //body....
+ var t=document.getElementById("mysecond").classList;
+if(t.contains('wh'))
+{
+document.getElementById("mysecond").classList.remove('wh');
+document.getElementById("mysecond").classList.add('purp');
+
+}
+else
+{
+  document.getElementById("mysecond").classList.remove('purp');
+document.getElementById("mysecond").classList.add('wh');
+}
+
+
+
+
+
+
+
+}
+</script>
+
+<!-- The scrollable area -->
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Rooms
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Living Room</a></li>
+      <li><a class="dropdown-item active" href="#">Kitchen</a></li>
+      <li><a class="dropdown-item disabled" href="#">Bed Room</a></li>
+<li><a class="dropdown-item disabled" href="#">Reading Room</a></li>
+<li><a class="dropdown-item disabled" href="#">Bath Room</a></li>
+<li><a class="dropdown-item disabled" href="#">Baby Room</a></li>
+</ul>
+</div>
+</div>
+
+
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
